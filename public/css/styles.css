@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #000000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg %3E%3Cpolygon fill='%23080503' points='1600 160 0 460 0 350 1600 50'/%3E%3Cpolygon fill='%23100a05' points='1600 260 0 560 0 450 1600 150'/%3E%3Cpolygon fill='%23181008' points='1600 360 0 660 0 550 1600 250'/%3E%3Cpolygon fill='%2320150a' points='1600 460 0 760 0 650 1600 350'/%3E%3Cpolygon fill='%23281A0D' points='1600 800 0 800 0 750 1600 450'/%3E%3C/g%3E%3C/svg%3E");
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+img {
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 10px !important;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10%;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+}
+
+h1 {
+  color: rgb(225, 76, 65);
+  text-transform: uppercase;
+  font-weight: 500px;
+  font-size: 30px;
+  margin: 0;
+}
+
+#cesta-carrito {
+  border: none;
+  color: rgb(225, 76, 65);
+  font-size: 30px;
+  background-color: white;
+  border-radius: 50%;
+  padding: 10px 20px;
+  transition: all .3s;
+}
+
+#cesta-carrito:hover {
+  cursor: pointer;
+  color: white;
+  background-color: rgb(225, 76, 65);
+}
+
+#cesta-carrito:focus {
+  outline: none;
+}
+
+#producto-contenedor {
+  display: grid;
+  width: 95vw;
+  height: 100vh;
+  padding-left: 16px;
+  row-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "honey porter"
+                        "rubia scottish"
+}
+.honey{
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  grid-area: honey;
+}
+.porter{
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  grid-area: porter;
+}
+.rubia{
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  grid-area: rubia;
+}
+.scottish{
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  grid-area: scottish;
+}
+p {
+  line-height: 1.8;
+}
+
+.card {
+  max-width: 50%;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+select {
+  display: inline;
+  text-align: center;
+  border: 1px solid lightskyblue;
+}
+
+.modal-contenedor {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .5s;
+  opacity: 0;
+  visibility: hidden;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.modal-active {
+  opacity: 1;
+  visibility: visible;
+  z-index: 5;
+}
+
+.modal-carrito {
+  position: relative;
+  background-color: rgb(218, 233, 86);
+  min-width: 500px;
+  padding: 20px;
+  margin-top: -100%;
+  transition: all .5s;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
+
+.modal-active .modal-carrito {
+  margin-top: 0;
+}
+
+.modal-carrito h3 {
+  color: rgb(225, 76, 65);
+  padding-bottom: 5px;
+}
+
+.modal-carrito #btn-cerrar-carrito {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 20px;
+  color: rgb(225, 76, 65) !important;
+  border: none;
+  background-color: white;
+}
+
+.modal-carrito #btn-cerrar-carrito:hover {
+  cursor: pointer;
+}
+
+.modal-carrito #btn-cerrar-carrito:focus {
+  outline: none;
+}
+
+.modal-carrito .producto-precio {
+  padding-top: 10px;
+}
+
+.card .card-image .card-title {
+  color: rgb(225, 76, 65);
+  position: unset
+}
+
+.productoEnCarrito {
+  border-left: 5px solid lightblue;
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+  margin: 5px 0;
+  padding: 5px 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.productoEnCarrito:hover {
+  border-left: 5px solid rgb(225, 76, 65);
+}
+
+.boton-eliminar {
+  background-color: white;
+  color: #ff6961;
+  border: none;
+  font-size: 20px;
+}
+
+.boton-eliminar:hover {
+  cursor: pointer;
+}
+
+.boton-eliminar:focus {
+  outline: none;
+}

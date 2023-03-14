@@ -1,0 +1,41 @@
+[
+    {
+        "id": 1,
+        "nombre": "Cerveza Honey",
+        "tipo": "honey",
+        "desc": "Una cerveza suave y dulce",
+        "precio":  450,
+        "img": "public/images/honey1.png",
+        "cantidad":1
+    },
+
+    {
+        "id": 2,
+        "nombre": "Cerveza Porter",
+        "tipo": "porter",
+        "desc": "Una cerveza oscura como el cafe con el que se produce",
+        "precio":  500,
+        "img": "public/images/porter1.png",
+        "cantidad":1
+    },
+
+    {
+        "id": 3,
+        "nombre": "Cerveza Rubia",
+        "tipo": "rubia",
+        "desc": "Una cerveza tradicional",
+        "precio":  400,
+        "img": "public/images/rubia1.png",
+        "cantidad":1
+    },
+
+    {
+        "id": 4,
+        "nombre": "Cerveza Scottish",
+        "tipo": "scottish",
+        "desc": "Una cerveza especial, con sabores encontrados",
+        "precio":  470,
+        "img": "public/images/scottish1.png",
+        "cantidad":1
+    }
+]
